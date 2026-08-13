@@ -163,39 +163,8 @@ End-to-end pings succeeded in both directions between Edmonton and Ottawa. The a
   <img src="https://i.imgur.com/asTOEFO.png" width="800" alt="Successful Edmonton-to-Ottawa ping in the Layer 3 design">
 </p>
 
-## Validation Summary
 
-| Area | Status | Evidence |
-|---|---|---|
-| VLAN creation and port assignment | Passed | VLAN configuration and access-port membership captured |
-| Pre-routing VLAN isolation | Passed | Same-VLAN ping passed and cross-VLAN ping failed |
-| 802.1Q trunking | Passed | Trunk interface shown operational |
-| Router-on-a-stick | Passed | Four subinterfaces shown up/up |
-| Inter-VLAN routing | Passed | Cross-VLAN pings completed successfully |
-| Campus DHCP | Passed | Pools, bindings, and leased addresses displayed |
-| Wireless association | Passed | Laptop and tablet joined the configured SSID |
-| ACL 100 and ACL 110 | Passed | Permitted and denied traffic matched the intended tests |
-| Switch port security | Configured and observed | Secure status and link shutdown behavior captured |
-| Unused-port shutdown | Passed | Selected interfaces shown administratively down |
-| Static routing | Passed for tested paths | Main-campus and Edmonton connectivity succeeded |
-| Router-based DHCP relay | Configured | Helper targets captured; branch leases not shown |
-| RIPv2 | Partially validated | End-to-end pings passed; learned RIP routes not captured |
-| Multilayer switching | Configured | SVIs and routed ports documented |
-| Layer 3 DHCP relay | Requires correction | Edmonton helper target and branch gateway exclusions need correction |
-| EIGRP | Partially validated | Branch pings passed; neighbor and learned-route evidence not captured |
 
-## Troubleshooting Highlights
-
-This project included several realistic configuration mistakes and corrections:
-
-- Replaced unsupported spaces in VLAN names with underscores.
-- Moved DHCP exclusion and `ip routing` commands to global configuration mode.
-- Corrected DHCP helper placement and target-address selection.
-- Identified printer IP addresses entered in the gateway field.
-- Identified an Ottawa interface using the Edmonton LAN address.
-- Corrected RIPv2 network statements and missing command keywords.
-- Added the required EIGRP transit-network statements to the intended configuration.
-- Distinguished successful ping tests from proof of protocol-learned routes.
 
 ## Repository Structure
 
