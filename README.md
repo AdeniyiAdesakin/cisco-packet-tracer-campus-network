@@ -92,19 +92,19 @@ Main Campus
 The first design separated campus users and servers into departmental VLANs.
 
 <p align="center">
-  <img src="https://i.imgur.com/XIG4Yb0.png" width="800" alt="Initial VLAN-segmented campus topology">
+  <img src="https://i.imgur.com/tBpUyqD.png" width="800" alt="Initial VLAN-segmented campus topology">
 </p>
 
 The switch trunk carried VLANs 10, 20, 30, and 100 to the router.
 
 <p align="center">
-  <img src="https://i.imgur.com/j592VbL.png" width="800" alt="Verified 802.1Q trunk on the core switch">
+  <img src="https://i.imgur.com/N1oLJWW.png" width="800" alt="Verified 802.1Q trunk on the core switch">
 </p>
 
 After the router subinterfaces and endpoint gateways were configured, inter-VLAN communication succeeded.
 
 <p align="center">
-  <img src="https://i.imgur.com/COEIiAC.png" width="800" alt="Successful inter-VLAN connectivity test">
+  <img src="https://i.imgur.com/UGeULC1.png" width="800" alt="Successful inter-VLAN connectivity test">
 </p>
 
 ### DHCP and Endpoint Expansion
@@ -112,13 +112,13 @@ After the router subinterfaces and endpoint gateways were configured, inter-VLAN
 DHCP bindings and pool utilization confirmed that campus clients were receiving dynamic addresses.
 
 <p align="center">
-  <img src="https://i.imgur.com/oHPL4Kl.png" width="800" alt="Cisco IOS DHCP pool validation">
+  <img src="https://i.imgur.com/KOh9eJ9.png" width="800" alt="Cisco IOS DHCP pool validation">
 </p>
 
 The campus was expanded with wireless clients, printers, servers, and dedicated access switches.
 
 <p align="center">
-  <img src="https://i.imgur.com/5DqxjUw.png" width="800" alt="Expanded campus topology">
+  <img src="https://i.imgur.com/ysDURia.png" width="800" alt="Expanded campus topology">
 </p>
 
 ### Security Controls
@@ -126,13 +126,13 @@ The campus was expanded with wireless clients, printers, servers, and dedicated 
 ACL 100 restricted the Student VLAN from reaching the Server VLAN while permitting approved departmental networks.
 
 <p align="center">
-  <img src="https://i.imgur.com/p6BwuzR.png" width="800" alt="Extended ACL protecting the Server VLAN">
+  <img src="https://i.imgur.com/JCSk2ME.png" width="800" alt="Extended ACL protecting the Server VLAN">
 </p>
 
 Static port security was applied to server-facing switch interfaces and verified in secure-up status.
 
 <p align="center">
-  <img src="https://i.imgur.com/NOFM80U.png" width="800" alt="Verified switch port-security status">
+  <img src="https://i.imgur.com/hOc1lVP.png" width="800" alt="Verified switch port-security status">
 </p>
 
 ### Multi-Site Expansion
@@ -140,7 +140,7 @@ Static port security was applied to server-facing switch interfaces and verified
 The campus was connected to Edmonton and Ottawa through separate point-to-point links.
 
 <p align="center">
-  <img src="https://i.imgur.com/iPR9Ko6.png" width="800" alt="Main campus connected to Edmonton and Ottawa">
+  <img src="https://i.imgur.com/aVmgwk9.png" width="800" alt="Main campus connected to Edmonton and Ottawa">
 </p>
 
 Branch-to-branch communication succeeded during the dynamic-routing stage.
@@ -154,7 +154,7 @@ Branch-to-branch communication succeeded during the dynamic-routing stage.
 The final design replaced the router-based campus core with Cisco 3560 multilayer switches and routed point-to-point links.
 
 <p align="center">
-  <img src="https://i.imgur.com/OO4iQQ0.png" width="800" alt="Layer 3 switch design connecting the main campus and branches">
+  <img src="https://i.imgur.com/MCmCNUQ.png" width="800" alt="Layer 3 switch design connecting the main campus and branches">
 </p>
 
 End-to-end pings succeeded in both directions between Edmonton and Ottawa. The available evidence confirms reachability, although additional routing-table and neighbor outputs would be needed to prove the final EIGRP state conclusively.
