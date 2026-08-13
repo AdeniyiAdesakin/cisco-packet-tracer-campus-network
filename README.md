@@ -126,13 +126,13 @@ The campus was expanded with wireless clients, printers, servers, and dedicated 
 ACL 100 restricted the Student VLAN from reaching the Server VLAN while permitting approved departmental networks.
 
 <p align="center">
-  <img src="images/security/08.png" width="800" alt="Extended ACL protecting the Server VLAN">
+  <img src="https://i.imgur.com/p6BwuzR.png" width="800" alt="Extended ACL protecting the Server VLAN">
 </p>
 
 Static port security was applied to server-facing switch interfaces and verified in secure-up status.
 
 <p align="center">
-  <img src="images/security/17.png" width="800" alt="Verified switch port-security status">
+  <img src="https://i.imgur.com/NOFM80U.png" width="800" alt="Verified switch port-security status">
 </p>
 
 ### Multi-Site Expansion
