@@ -22,8 +22,8 @@ The network was designed to meet those needs while demonstrating how an environm
 
 | Stage | Focus | Main Technologies | Detailed Walkthrough |
 |---|---|---|---|
-| 1 | Campus switching and network services | VLANs, 802.1Q trunking, router-on-a-stick, DHCP, wireless, printers | [VLAN Segmentation and Inter-VLAN Routing]() |
-| 2 | Access-layer security | Extended ACLs, port security, unused-port shutdown | [Network Security with ACLs and Port Security](02-network-security/README.md) |
+| 1 | Campus switching and network services | VLANs, 802.1Q trunking, router-on-a-stick, DHCP, wireless, printers | [VLAN Segmentation and Inter-VLAN Routing](https://github.com/AdeniyiAdesakin/01-vlan-routing) |
+| 2 | Access-layer security | Extended ACLs, port security, unused-port shutdown | [Network Security with ACLs and Port Security](https://github.com/AdeniyiAdesakin/02-network-security) |
 | 3 | Branch connectivity and Layer 3 redesign | Static routing, DHCP relay, RIPv2, SVIs, routed ports, EIGRP | [Multi-Site Routing and Layer 3 Switching](https://github.com/AdeniyiAdesakin/03-multisite-routing) |
 
 
@@ -216,11 +216,11 @@ cisco-packet-tracer-campus-network/
 
 ## Detailed Walkthroughs
 
-### 1. [VLAN Segmentation and Inter-VLAN Routing](01-vlan-routing/README.md)
+### 1. [VLAN Segmentation and Inter-VLAN Routing](https://github.com/AdeniyiAdesakin/01-vlan-routing)
 
 Campus VLANs, access-port assignments, router-on-a-stick, DHCP, wireless connectivity, and printer deployment.
 
-### 2. [Network Security with ACLs and Port Security](02-network-security/README.md)
+### 2. [Network Security with ACLs and Port Security](https://github.com/AdeniyiAdesakin/02-network-security)
 
 Dedicated access switches, extended ACLs, traffic validation, static port security, violation recovery, and unused-port shutdown.
 
