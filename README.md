@@ -8,13 +8,15 @@ This capstone follows the development of a Cisco Packet Tracer network from a sm
 
 The work was completed in three stages. I first built the campus switching and addressing foundation, then applied access-layer security controls, and finally added branch routing before redesigning the network with multilayer switches. Each stage includes the original Cisco IOS commands, configuration evidence, connectivity tests, and troubleshooting notes.
 
-> **Evidence note:** The source material included project documents and screenshots but no Packet Tracer `.pkt` file. Results are described according to the evidence captured during the lab. Items without enough verification are identified as configured or partially validated rather than presented as fully working.
+
 
 ## Business Scenario
 
 The organization requires separate networks for Administration, Academics, Students, Guests, and Servers at its main campus. It also needs routed connectivity to Edmonton and Ottawa, centralized IP address assignment, controlled access to server resources, and protection against unauthorized devices connecting to switch ports.
 
 The network was designed to meet those needs while demonstrating how an environment can progress from basic Layer 2 segmentation to dynamic routing across multiple sites.
+
+
 
 ## Project Architecture
 
@@ -23,6 +25,8 @@ The network was designed to meet those needs while demonstrating how an environm
 | 1 | Campus switching and network services | VLANs, 802.1Q trunking, router-on-a-stick, DHCP, wireless, printers | [VLAN Segmentation and Inter-VLAN Routing](01-vlan-routing/README.md) |
 | 2 | Access-layer security | Extended ACLs, port security, unused-port shutdown | [Network Security with ACLs and Port Security](02-network-security/README.md) |
 | 3 | Branch connectivity and Layer 3 redesign | Static routing, DHCP relay, RIPv2, SVIs, routed ports, EIGRP | [Multi-Site Routing and Layer 3 Switching](03-multisite-routing/README.md) |
+
+
 
 ## Network at a Glance
 
@@ -88,19 +92,19 @@ Main Campus
 The first design separated campus users and servers into departmental VLANs.
 
 <p align="center">
-  <img src="images/vlan-routing/05.png" width="800" alt="Initial VLAN-segmented campus topology">
+  <img src="https://i.imgur.com/XIG4Yb0.png" width="800" alt="Initial VLAN-segmented campus topology">
 </p>
 
 The switch trunk carried VLANs 10, 20, 30, and 100 to the router.
 
 <p align="center">
-  <img src="images/vlan-routing/16.png" width="800" alt="Verified 802.1Q trunk on the core switch">
+  <img src="https://i.imgur.com/j592VbL.png" width="800" alt="Verified 802.1Q trunk on the core switch">
 </p>
 
 After the router subinterfaces and endpoint gateways were configured, inter-VLAN communication succeeded.
 
 <p align="center">
-  <img src="images/vlan-routing/18.png" width="800" alt="Successful inter-VLAN connectivity test">
+  <img src="https://i.imgur.com/COEIiAC.png" width="800" alt="Successful inter-VLAN connectivity test">
 </p>
 
 ### DHCP and Endpoint Expansion
@@ -108,13 +112,13 @@ After the router subinterfaces and endpoint gateways were configured, inter-VLAN
 DHCP bindings and pool utilization confirmed that campus clients were receiving dynamic addresses.
 
 <p align="center">
-  <img src="images/vlan-routing/23.png" width="800" alt="Cisco IOS DHCP pool validation">
+  <img src="https://i.imgur.com/oHPL4Kl.png" width="800" alt="Cisco IOS DHCP pool validation">
 </p>
 
 The campus was expanded with wireless clients, printers, servers, and dedicated access switches.
 
 <p align="center">
-  <img src="images/vlan-routing/36.png" width="800" alt="Expanded campus topology">
+  <img src="https://i.imgur.com/5DqxjUw.png" width="800" alt="Expanded campus topology">
 </p>
 
 ### Security Controls
