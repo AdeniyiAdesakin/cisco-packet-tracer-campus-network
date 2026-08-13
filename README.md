@@ -140,13 +140,13 @@ Static port security was applied to server-facing switch interfaces and verified
 The campus was connected to Edmonton and Ottawa through separate point-to-point links.
 
 <p align="center">
-  <img src="images/multisite-routing/23.png" width="800" alt="Main campus connected to Edmonton and Ottawa">
+  <img src="https://i.imgur.com/iPR9Ko6.png" width="800" alt="Main campus connected to Edmonton and Ottawa">
 </p>
 
 Branch-to-branch communication succeeded during the dynamic-routing stage.
 
 <p align="center">
-  <img src="images/multisite-routing/39.png" width="800" alt="Successful Edmonton-to-Ottawa connectivity test">
+  <img src="https://i.imgur.com/0RoZyQk.png" width="800" alt="Successful Edmonton-to-Ottawa connectivity test">
 </p>
 
 ### Layer 3 Redesign
@@ -154,13 +154,13 @@ Branch-to-branch communication succeeded during the dynamic-routing stage.
 The final design replaced the router-based campus core with Cisco 3560 multilayer switches and routed point-to-point links.
 
 <p align="center">
-  <img src="images/multisite-routing/47.png" width="800" alt="Layer 3 switch design connecting the main campus and branches">
+  <img src="https://i.imgur.com/OO4iQQ0.png" width="800" alt="Layer 3 switch design connecting the main campus and branches">
 </p>
 
 End-to-end pings succeeded in both directions between Edmonton and Ottawa. The available evidence confirms reachability, although additional routing-table and neighbor outputs would be needed to prove the final EIGRP state conclusively.
 
 <p align="center">
-  <img src="images/multisite-routing/62.png" width="800" alt="Successful Edmonton-to-Ottawa ping in the Layer 3 design">
+  <img src="https://i.imgur.com/asTOEFO.png" width="800" alt="Successful Edmonton-to-Ottawa ping in the Layer 3 design">
 </p>
 
 ## Validation Summary
